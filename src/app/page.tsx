@@ -1,1 +1,1 @@
-export { AuthFeature as default } from '@/domains/auth/features/layout';
+export { LandingPageFeature as default } from '@/domains/landing/features/page';

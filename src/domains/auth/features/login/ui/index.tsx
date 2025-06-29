@@ -60,13 +60,10 @@ export function LoginUi({ form, onSubmit }: ILoginUiProps) {
               </FormItem>
             )}
           />
-          <Link href={'#'} className="text-xs underline text-violet-500">
+          <Link href={'#'} className="text-xs underline text-primary">
             Esqueceu sua senha?
           </Link>
-          <Button
-            className="mt-10 h-10 bg-violet-500 hover:brightness-90 hover:bg-violet-500"
-            type="submit"
-          >
+          <Button className="mt-10 h-10 bg-primary" type="submit">
             Entrar
           </Button>
         </form>

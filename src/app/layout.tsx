@@ -1,6 +1,7 @@
 import { Ubuntu, Inter } from 'next/font/google';
 import './globals.css';
 import { AllProviders } from '@/global/providers';
+import Footer from '@/global/components/footer';
 
 const ubuntu = Ubuntu({
   variable: '--font-ubuntu',
@@ -22,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ubuntu.variable} ${inter.variable} antialiased`}>
-        <div className="flex w-full min-h-screen font-(family-name:--font-ubuntu)">
+        <div className="flex flex-col w-full min-h-screen font-(family-name:--font-ubuntu)">
           <AllProviders>{children}</AllProviders>
+          <Footer />
         </div>
       </body>
     </html>

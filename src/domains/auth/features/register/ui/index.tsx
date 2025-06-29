@@ -63,7 +63,7 @@ export function RegisterUi({ form, onSubmit }: IRegisterUiProps) {
             )}
           />
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-col md:flex-row">
             <FormField
               control={form.control}
               name="cpf"
@@ -143,10 +143,7 @@ export function RegisterUi({ form, onSubmit }: IRegisterUiProps) {
             )}
           />
 
-          <Button
-            className="mt-10 h-10 bg-violet-500 hover:brightness-90 hover:bg-violet-500"
-            type="submit"
-          >
+          <Button className="mt-10 h-10 bg-primary" type="submit">
             Finalizar
           </Button>
         </form>
